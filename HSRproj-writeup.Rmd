@@ -2,16 +2,16 @@
 title: "HSRproj writeup"
 author: "Natalie R Smith, Katherine M Miller, Bryan Blette, and Leah Frerichs"
 output:
+  word_document:
+    reference_docx: word-styles-reference-01.docx
+    toc: yes
+    toc_depth: '3'
   html_document:
     highlight: default
     number_sections: no
     theme: lumen
     toc: yes
     toc_depth: 3
-  word_document:
-    reference_docx: word-styles-reference-01.docx
-    toc: yes
-    toc_depth: '3'
 ---
 
 
