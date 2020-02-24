@@ -1,0 +1,254 @@
+ProjectID,Individual,Interpersonal,Organizational,Community,Policy,Not Applicable,Flag,Description
+20184142,,,,1,,,,direct-to-consumer advertising
+20191082,,,,1,,,,"workforce capacity of health systems, neighborhood resources"
+20183142,,1,,,,,,household food insecurity
+20184041,1,,,,,,,culturally tailored food budgeting intervention
+20181592,,1,,,,,,group visits diabetes self-management systems
+20183099,1,,,,,,,DPP sustained
+20182033,1,,,,,,,self-led lifestyle intervention
+20181090,,,,,,1,,machine learning
+20181199,1,,,,,,,"CVD, disability, and diabetes links"
+20182066,,,,1,,,,county level contextual data plus individual level data
+20182068,,,,1,,,,community factors - food swamps
+20182073,1,,,1,,,,county level social determinants and individual level social determinants
+20182075,,,,,,1,,improving surveillance systems
+20183063,,1,,,,,,group lifestyle balance intervention implemented at the worksite. 
+20174104,,,1,,,,,clinical decision support systems
+20174188,1,,,,,,,mobile health modules
+20174156,1,1,,,,,,community health worker delivered intervention
+20173023,1,,,,,,,drugs to manage diabetes in chronic kidney disease patients
+20173229,1,,,,,,,patient characteristics and adherence in lifestyle interventions
+20181360,1,,,,,,,DPP in marshallese islanders
+20173073,,1,,,,,,CHW-led diabetes intervention
+20173151,1,1,,,,,,lifestyle intervention plus group and family engagement
+20173156,1,1,1,,,,,EHR alert to screen plus CHW delivered lifestyle intervention
+20173163,1,1,,,,,,computer delivered intervention to parent-child dyads
+20173239,,1,,,,,1,group lifestyle balance intervention implemented at the worksite. 
+20173262,1,,,,,,,individual treatment plan for prediabetes
+20173289,1,,,,,,,metformin
+20173348,,1,,,,,,social support for veterans with diabetes
+20174028,,1,,,,,,community health worker delivered intervention plus social support
+20173123,,,1,,,,1,patient portal use
+20172055,,,,1,1,,,systematic review of community and policy strategies
+20173176,,,,,,1,,prediction of a1c variability
+20183102,1,,,,,,,insulin pump management
+20173193,,,,,,1,,identifying contextual errors
+20164047,1,,,,,,,diabetes self management
+20164097,,,,,,1,,algorithm to estimate latent diabetes phenotypes
+20171354,,,,,,1,,methods - using metas to quantify multiple chronic conditions
+20173051,,1,,,,,,social support intervention
+20173209,1,,,,,,,digital intervention
+20173260,,,,,,1,,mass diabetes screening
+20182623,1,,,,,,,HIV plus NCD screening/care intervention
+20184409,1,,,,,,,emotions and food cravings
+20163146,1,1,,1,,,,"individual, family, and cultural factors influencing patient preferences"
+20171065,,,1,,,,1,care coordination
+20171211,1,,,,,,,culturally relevant and low-resource interventions (ambiguous)
+20171334,1,,,,,,,gestational diabetes as the independent variable
+20173219,,,,1,,,1,food and healthcare disrupts because of hurricane katrina
+20173247,1,,,,,,,mhealth and accelerometry
+20173252,1,,,,,,,case management for diabetes treatment
+20173257,,,,,,1,,identifying latent profiles of diabetes
+20171229,,,,,,1,,systematic review methods
+20172079,1,,,,,,,bariatric surgery
+20172114,1,,,,,,,aerobic and resistance exercise interventions
+20173119,1,,,,,,,lifestyle intervention  
+20173130,,1,,,,,,team-based intervention with mhealth
+20173146,,,1,,,,,adoption of EBPPs in LHDs
+20173383,,,,,1,,,change in insurance benefits
+20164046,,1,,,,,,"family-based diabetse treatments, some delivered by health workers"
+20164069,1,,,,,,,mobile self management intervention
+20171016,1,1,,,,,,cloud based self management for adolescents and caregivers
+20171308,1,,1,,,,,smart pill-box intervention for patients that links to EHR technology
+20164015,,,1,1,,,,community factors and health system factors relating to health status
+20171078,,1,,,,,,peer educator networks
+20163010,,1,,,,,,shared medical appointments (group-based)
+20163210,1,,1,,,,,individual and systems factors explaining why women with gestational diabetes don't take advantage of opportunities for t2d prevention
+20163216,1,,1,,,,,organizational training for providers and counseling session for behavior change
+20163247,,,,,1,,,alabama transition to ACOs
+20171197,1,,,,,,,insulin and end stage renal disease
+20173378,,1,,,,,,peer leader diabetes self management support
+20182603,1,1,,,,,,DPP plus delivery via community health workers
+20163248,,,,,,1,,harmonizing Indian and US diabetes registries in youth
+20171149,1,,,,,,,telemedicine intervention to make visits more patient-centered
+20161043,,,1,,,,,improving linguistic complexity in patient portal data
+20163012,1,,,,,,,motivation for PA among individuals with MS
+20163093,,,1,,,,,EMR decision support for blood glucose monitoing
+20163205,1,,,,,,,bariatric procedures and outcomes
+20163231,1,,,,,,,risk of a1c control among complex diabetes patients
+20163243,,,1,1,,,,integration of social determinant factors (community) into EHRs (org)
+20163246,1,,,,,,,alternative versions of diabets self management support programs
+20163250,,,,,,1,1,data on lots of factors into one predictive model - no specification on levels of the factors
+20163264,,,,,,1,,continuation of surveillance study
+20163299,,,1,,,,,collaborative care for chronic kidney disease
+20173372,1,1,1,,,,,adapted individual and group intervention to expand into the workplace
+20182600,1,1,1,,,,,peer led lifestyle change program in the workplace
+20182602,1,1,1,,,,,center-based community health worker intervention
+20184024,,,,,1,,,medicaid expansion
+20163040,,1,,,,,,family members diabetse specific behaviors
+20163086,,1,,,,,,peer comparison in the EHR
+20163144,1,1,,,,,,group and individual interventions examined
+20163156,,,,,,1,,algorithms for identifying hypoglycemia from EHR data
+20163238,1,,,,,,,rates of diabetes among those with severe mental illness
+20182604,1,,,,,,,mtoivation for self management behaviors
+20154051,1,,,,,,,patient-centered intervention to increase med adherence
+20154193,,,,,,,,
+20154271,1,1,1,1,1,,,assess factors based on the andersen and aday model (which is all levels of the SEM)
+20162078,,1,,,,,,family perspectives on barriers to self management of t1d in youth
+20163131,,1,,,,,,support for caregivers of youth with t1d
+20163241,,,1,,,,,univesal insulin administration in hospitals
+20154080,,1,1,,,,,"patient care teams, patient family and friends"
+20154240,1,,,,,,,personalized data visualization for individuals
+20154251,,,1,,,,,closed loop feedback system for patient care
+20161285,1,,1,,,,,"natural language processing, patient EHR use"
+20173401,1,,,,,,,lifestyle change program for american indian adults
+20153002,1,,,,,,,interview veterans about potential engagement strategies for diabetes prevention
+20153071,1,,,,,,,medication changes on adherence
+20153160,1,,,,,,,patient-leel variation in emotional distress on glycemic control
+20153198,,,,,1,,,evaluating CMS quality metrics in older diabetes medications
+20153222,1,,,,,,,"diabetes and breast cancer links, plus metformin use"
+20153553,,,,,1,,,ACA evaluation
+20154086,,,,,,1,,developing quality measues with qualitative work
+20154267,1,,,,,,,personalized behavioral intervention
+20162180,,,,,,,,
+20162349,,1,,,,,,group care and microfinance groups for diabetes prevention
+20173412,1,,,,,,,tailored intervention to reduce amputation risk in veterans
+20153267,1,,,,,,,using individual characteristics to predict complications for arthritis surgery
+20153342,,,,,,1,,methods development
+20152312,,,,,,1,,methods development- causal inference
+20152055,1,1,,,,,,individualized plus group intervention for riskf actors for diabetes etc.
+20162290,,,1,1,1,,1,"NP scope of practice within VA, control for geography and clinic effects"
+20152031,,1,,,,,,family model of care within marshallese
+20152224,,,1,,,,,level of patient involvement in care choices
+20154159,1,,,,,,,app for those with intellectual disabilities
+20151054,,1,,,,,,social network effects at HBCUs
+20152039,1,,,,,,,individual management for patient targets
+20152047,,,,,1,,,massachusetts insurance reform
+20152233,,1,,,,,,nurse health coaching to address care needs
+20153077,,1,,,,,,lay health worker intervention
+20153101,,,,,1,,,high deductible health plans
+20153177,1,1,,,,,,individual vs. consultation interventions
+20153190,1,,,,,,,intervention card sorting to help patients prioritize needs
+20153220,1,,,,,,,what shapes patient priorities
+20153232,1,,,,,,,DPP translation to latinos
+20153251,1,,,,,,,dose safety controller
+20181310,,,,,,1,,temporal contraint identification? 
+20152700,1,,,,,,,medications on CVD events
+20153021,1,,,,,,,"race/ethnic differences in glycemic control, drugs, and CVD outcomes"
+20153072,,1,,,,,,peer led diabetes prevention intervention
+20153329,1,,,,,,,tailored and affiratmation intervention
+20154030,,1,,,,,,targeted diabetes prevention program in groups
+20164131,,,1,,,,,system intervention using EHR data and decision support/feedback
+20171223,,,1,,,,,training providers to interact with their patients in a culturally appropriate way
+20151123,1,,1,,,,,individual and facility level factors on hospitalizations
+20152176,,,,1,,,,fotonovela in local newspapers to engage latino patients
+20152181,1,,,,,,,app for diabetes prevention - hola bebe
+20152716,,,1,,1,,1,NP scope of practice within VA
+20153110,1,,,,,,,PA intervention 
+20153242,1,,,,,,,patient use of ehr/portal data
+20153341,1,,,,,,,metformin among chronic kidney disease patients
+20153543,1,,,,,,,phone-delivered medication adherence promotion
+20151045,1,1,1,,,,,"clinic based intervention, group of individual intervention"
+20151223,,,,,1,,,TexKat - medicaid waiver for katrina evacuees
+20152619,,1,1,,,,,"auto-EHR referral, tele-pharmacist intervention"
+20161255,1,1,1,,,,,"EHR algorithm use, family screening, and individual questionnaire for high penetrant single gene effects"
+20143324,,1,,,,,,group based weight management program
+20152638,,1,,,,,,group lifestyle balance  
+20152668,,,1,,,,,evaluation of implementation strategies
+20152788,,,1,,,,,clinic based tool to evaluate patient concerns and preferencs
+20153433,,,,1,,,,social marketing to decrease SSB consumption
+20153498,,,,,,1,,improve identification of multimobidity
+20143062,,1,,,,,,how health IT can be shared with social networks
+20143203,,1,,,,,,social spillover effects
+20143286,1,,,,,,,helping veterans use EHR/patient portal more effectively
+20143434,,1,,,,,,peer mentor intervention
+20151096,,,,1,1,,,external to VA determinants of care utilization
+20151100,,,1,,,,,primary care and mental health integration in the VA
+20153116,1,1,,,,,,biologic programming and family environment
+20143173,1,,,,,,,lifestyle intervention for migrant farm workers
+20184305,1,,,,,,,medical management of hyperlipidemia
+20143061,,1,,,,,,peer support/coaching
+20143397,1,,,,,,,psychosocial influences on diabetes among AIAN
+20143401,,1,,,,,,"development of interactive, peer coaching intervention for med adherence"
+20143119,,1,,,,,,adapt CHW intervention to clinic
+20143386,,1,1,,,,,group medical appoitments and integration of patient health record systems
+20153010,1,,,,,,,race/ethnic differences in receipt of daibetes self management education
+20162341,1,,,,,,,health literacy for med adherence
+20143588,1,,,,,,,methods for stated preference methods
+20143110,1,,,,,,,testing the implementation of VA MOVE intervention
+20143385,1,1,1,,,,,"home based teaching for patients and familiares, linking to health clinics/orgs"
+20152723,,,,,,1,,specifications for a1c control in the VA/quality metrics
+20143049,1,,,,,,,exercise + high protein diet intervention
+20143382,1,,,,,,,identify patient factors that influence diabetes and CVD health outcomes
+20143389,,1,,,,,1,patient navigators - could also be organizational? 
+20143528,1,,,,,,,QOL and satisfaction in response to different drug therapies
+20143552,,1,,,,,,family centered evaluation for diabetes self management
+20143560,,1,,,,,,cell phone system and community  health worker intervention
+20134017,1,,1,,,,,"develop and validate a model of patient information needs, redo a patient portal, see if it improves outcomes"
+20134116,1,,,,,,,drugs for psoriasis and BMI/plasma glucose
+20141185,,,1,,,,,identify practice level costs of patient-centered medical home
+20141371,1,,,,,,,user centered design of patient portal data
+20141381,,,,,,1,,"developing priorities for CER and PCOR with individuals, clinics, systems input"
+20142138,,,1,,1,,1,medicaid transformation in Maine for mental health and diabetes
+20143148,,,1,,,,,EHR-based tool for patient-provider communication
+20153400,1,,,,,,,health communication competence
+20153557,,1,,,,,,prevention outreach specialists for diabetes self management
+20174271,,,,,,,,
+20184337,1,1,,,,,,"lifestyle education class, lifestyle educ+group imagery intervention"
+20134055,1,,1,,,,,understand barriers to patient portal use and redesign
+20134083,1,,1,,,,,"patient needs for portal design, pilot test new reminder system"
+20141029,1,,,,,,,"how genomic data is perceived and used, incorporated into HER"
+20141205,1,,,,,,,hypoglycemia control + drugs
+20142037,,,,,1,,,dietary policies!
+20142053,1,,,,,,,healthcare use and risk factors for African Americans with heart disease
+20143217,1,,1,,,,,technology-enabled diabetes support system that can be integrated with EHR
+20143222,1,,,,,,,web-based DPP alternative
+20143257,1,,,,,,1,co-treating depression and cardio-metabolic diseases
+20143264,1,,,,,,,glucose monitor feedback
+20134187,1,1,,,,,,diabetes self monitoring plus telephone-provider calls and psychiatry intervention
+20134315,,1,,,,,,shared medical appointments
+20141302,,,1,,,,,linkages between primary care providers and senior centers for older adult health
+20142019,1,,,,,,,hispanic inpatient care
+20143082,1,,,1,,,,"diabetes prevalence among asian and pacific islander subpopulations by individual, treatment, and environmental factors"
+20143244,,1,,,,,,home based team care for chronic kidney disease
+20134250,,1,,,,,,collaborative goal setting between patietns and providers
+20141231,1,,,,,,,patient communication with providers
+20141276,,,,,1,,,cost-sharing policies on health care utilization and outcomes
+20142064,1,,,,,,,real time diabetes self management
+20161491,,1,,,,,1,health coaching for implementation
+20151014,,,1,,,,,coordinated care for patients with daibetes
+20134211,,,1,,,,,improving coordinated care in the VA
+20143446,,,,,1,,,understanding use of VA and medicare advantage programs
+20133372,,1,,,,,,family financial burden on medication adherence
+20133375,1,,,,,,,effects of BMI and individual characteristics on health resource use
+20133379,1,,,,,,,spending growth among people with diabetes using MEPS
+20132454,1,,,,,,1,possibly NA? delivering PCOR and CER info to diabetes educators
+20132517,1,,,,,,,tailored health messaging
+20132005,,,1,,,,,clinic decision support tool for personalized gluocse control
+20132018,1,1,,1,,,,"individual, behavioral, sociocultura, and environmental factors related to overweight/obesity"
+20132054,,1,1,,,,,CBPR project to examine use of community health workers for diabetes prevention/control under Hmong
+20132460,1,,1,,,,,physicial and practice barriers to use of antipsychotic medications for mental health and diabetes risk
+20133069,1,1,,,,,,intervention with group calls to reduce diabetes distress
+20143163,,,1,,,,,VA clinic factors/PACT indexes and mortality
+20133073,1,,,,,,,individual data collection for VA MOVE project
+20133152,1,,,,,,,internet based weight management program for women with mobility impairments
+20153555,,,1,,,,,organizational changes for diabetes care
+20131073,1,,,,,,,interactive spaced education for information retention
+20131154,1,1,,,,,,"older adults perceptions of diabetes and how local, social, cultural, and materials concepts inform conceptions"
+20131302,1,,,,,,,"clusters of people with diabetes with similar patterns of chronic conditions, use those for analyses"
+20131304,,,,,1,,1,how public reports from AHRQ and other organizationscan be improved
+20132355,1,1,,1,,,,"model how individual, interpersonal, and community factors related to oral health delivery in older adults"
+20133092,,,1,,,,,test system of provider training for motivational interviewing
+20142385,,,1,,,,,point of care decision support for managing older adult prescription needs
+20153492,1,,,,,,,stressors and diabetes in american indian population
+20153570,1,,,,,,,comparative effectiveness of glucose medications
+20124051,1,,1,,,,1,"patterns of care, clinical and non-clinical 'predictors' of med choice, microsimulation modeling"
+20132043,,,1,1,,,,community-organization based cvd-risk reduction program among patients with SMI
+20132060,,1,,,,,,family based intervention for obesity in american indian families
+20132233,1,,,,,,,relationship between SES and comorbid conditions/depression/diabetes/employment
+20133082,1,,,,,,,text reminders for diabetes control in teens with t1d
+20134287,,1,,,,,,healthcare extenders for postpartum glucose testing
+20124061,1,,,,,,,bilirubin for jaudice and later outcomes
+20124165,,,1,,,,,MANUALLY ADDED 2/10/20. patient portal within medial homes
+20132104,1,1,,1,,,,"MANUALLY ADDED 2/10/20. drinking practices between men/women, race/ethnicity, age, SES, employment, marital status. Aim 3 assess additional medition of social support and health care access"
+20133131,,1,,,,,,MANUALLY ADDED 2/10/20. group lifestyle balance for older adults intervention
