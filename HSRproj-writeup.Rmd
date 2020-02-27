@@ -1,6 +1,6 @@
 ---
 title: "HSRproj writeup"
-author: "Natalie R Smith, Katherine M Miller, Bryan Blette, and Leah Frerichs"
+author: "Natalie R Smith, Katherine E.M. Miller, Bryan S Blette, and Leah Frerichs"
 output:
   word_document:
     reference_docx: word-styles-reference-01.docx

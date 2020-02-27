@@ -159,6 +159,7 @@ nejm_not_LAZY = c("Comorbidities and Complications" = "#BC3C29FF",
                   "T2D prevention" = "#20854EFF")
 
 set.seed(45239)
+V(meshGraphNew)$name[[4]] <- "Native \n Americans"
 # and now we can visualize this network, using the layout we just pulled in
 ggraph(graph=meshGraphNew, 
        layout=layoutGG) +
