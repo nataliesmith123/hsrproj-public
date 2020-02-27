@@ -13,10 +13,10 @@ The following packages are needed for the markdown document to render successful
 + ggraph
 
 contact: 
-+ Natalie Smith, MS
++ Natalie R Smith, MS
 + natsmith@live.unc.edu
 
 coauthors: 
-+ Katherine Miller, MSPH
-+ Bryan Blette, MS
++ Katherine E.M. Miller, MSPH
++ Bryan S Blette, MS
 + Leah Frerichs, PhD
