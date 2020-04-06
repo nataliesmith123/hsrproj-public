@@ -51,10 +51,6 @@ ggplot(data=SEMgraph, aes(x=SEMgraph$avgYearlyFunding, # avg funding on the x-ax
   geom_dotplot(binwidth = 24000, dotsize=0.8) 
 
 
-# save as both vector and raster formats
-ggsave(filename = "output/Fig-1-SEM-funding.pdf", plot=last_plot(), device="pdf", 
-       units="in", width=11, height=8.5)
-
 ggsave(filename = "output/Fig-1-SEM-funding.png", plot=last_plot(), device="png", 
        units="in", width=11, height=8.5, dpi=500)
 
