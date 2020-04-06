@@ -17,8 +17,8 @@ table(mesh$numMeSH)
 mesh <- mesh %>%
   
   # separate this trimmed mesh term into new columns named A-Z
-  # 26 is the max number of mesh terms, so alphabet works nicely 
-  separate(meshTrimmed, into=LETTERS[seq(from=1, to=26)], 
+  # 32 is the max number of mesh terms, so alphabet + 6 combos works nicely 
+  separate(meshTrimmed, into= c(LETTERS[seq(from=1, to=26)], "AA", "BB", "CC", "DD", "EE", "FF"), 
            
            # this separator was determined by looking at the data
            sep="</li> <li>") %>%

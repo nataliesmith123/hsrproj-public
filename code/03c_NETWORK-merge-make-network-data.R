@@ -18,7 +18,7 @@ meshClassOnly <-  meshTotal %>%
   # remove unnecessary columns
   select(-MeSH, -MeSHSimple) %>%
   
-  # keep only distinct rows - so deletes duplicate classifications within the same projectID
+  # keep only distinct rows - so deletes duplicate classifications within the same projectID (e.g., two similar mesh terms that were grouped together)
   distinct()
 
 
@@ -32,6 +32,8 @@ meshNodes <- meshClassOnly %>%
   summarize(vsize = n()) 
 # we can do this now, it's alright
 # the edge list manipulations below don't induce any isolates, I checked 
+# and even if there are isolates now, we will get rid of them in the graph steps
+# and/or igraph would be fussy and refuse to create a graph object for us
 
 
 

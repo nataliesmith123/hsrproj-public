@@ -1,13 +1,26 @@
 
 ## @knitr SEMcleaning
 
-SEMOrig <- read.csv("data/hsrRecentIDs-SEMclassified-02-10-20.csv")
+# some code is deleted here for readability - this old code output the combination of new projects from the 900 dataset
+# and old projects that already had classifications. the SEM for update 900 csv was output and reclassified as needed. 
+
+
+SEMOrig <- read.csv("output/SEMforUPDATE900-classified.csv")
+# there are 323 records here, but only 250 should be included
+  table(SEMOrig$fromUpdate900)
+# 227 should be included 
+  table(SEMOrig$fromUpdate900, SEMOrig$Not.Applicable, useNA = "always")
+
 
 SEM <- SEMOrig %>%
   
   # get rid of the three that should not have been included
   # want to do programatically rather than deleting from excel file 
+  # after the update, this gets rid of OLD IDs that aren't needed anymore
   filter(ProjectID %in% hsrRecent$ProjectID) %>%
+  
+  # redundant, but just in case
+  filter(fromUpdate900==1) %>%
   
   
   # keep records that are NOT not applicable
@@ -21,7 +34,8 @@ SEM <- SEMOrig %>%
          policy = case_when(Policy==1 ~ "3policy", TRUE ~ NA_character_)) %>%
   
   # remove variables that are not needed for analysis
-  select(-Description, -Not.Applicable, -Flag)
+  select(-Description, -Not.Applicable, -Flag, -haveSEM, -fromUpdate900, 
+         -ProjectTitle, -Abstract)
 
 
 # convert from 'wide' dataset to 'long' dataset because some projects targeted more than 1 of the 3 levels
@@ -44,9 +58,9 @@ SEMlong <- SEM %>%
                                         "2places", 
                                         "3policy"),
                         
-                        labels = c("1people" = "Individual & Interpersonal \n avg= $353,231   n=147", 
-                                   "2places" = "Organizational & Community \n avg= $315,272   n=55",
-                                   "3policy" = "Policy \n avg= $286,938   n=13"))) %>%
+                        labels = c("1people" = "Individual & Interpersonal \n avg= $413,879   n=158", 
+                                   "2places" = "Organizational & Community \n avg= $312,060   n=45",
+                                   "3policy" = "Policy \n avg= $332,784   n=14"))) %>%
   
   # make the level variable name more informative
   rename(SEM = Level) 
@@ -70,8 +84,6 @@ SEMlong <- left_join(SEMlong,
                      hsrRecent %>% select(ProjectID, avgYearlyFunding), 
                      by="ProjectID")
   
-
-
 # now create the final dataset for graphs
 SEMgraph <- SEMlong %>%
 
@@ -102,10 +114,11 @@ SEMavgs = SEMgraph %>%
 
 print(SEMavgs)
 
+# of studies where the SEM was applicable, these are missing funding information
 SEMmissing = SEMlong %>%
   
   # now, we just want to examine how many we are missing funding info for - for caption
-  filter(avgYearlyFunding==-1) %>%
+  filter(avgYearlyFunding==-1 | is.na(avgYearlyFunding)) %>%
   
   # for each level
   group_by(SEM) %>%
@@ -115,5 +128,6 @@ SEMmissing = SEMlong %>%
 
 print(SEMmissing)
 
+nrow(distinct(SEMgraph, ProjectID))
 
 rm(SEMOrig, SEM, tmp, SEMlong, SEMavgs, SEMmissing)

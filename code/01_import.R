@@ -1,6 +1,6 @@
 
 ## @knitr dataimport
-hsrProj <- readxl::read_excel("data/DiabetesMellitusMeSHOnly-v1-01-27-20.xlsx")
+hsrProj <- readxl::read_excel("data/update-data-download-03-31-20.xlsx")
 
 hsrCleaned <- hsrProj %>%
   
@@ -56,6 +56,8 @@ hsrCleaned <- hsrCleaned %>%
 
 # and finally, keep numbers 1-250
 hsrRecent <- filter(hsrCleaned, number<=250)  
+
+table(hsrRecent$InitialYear)
 
 
 # this piece is needed because some funding numbers weren't reported, but could have been

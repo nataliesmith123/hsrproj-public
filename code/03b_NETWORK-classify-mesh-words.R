@@ -35,7 +35,8 @@ meshClassified <- meshSimpleReduced %>%
       MeSHSimple %in% HIV ~ "HIV", 
       MeSHSimple %in% SLEEP ~ "Sleep", 
       MeSHSimple %in% OSTEO ~ "Osteoarthritis", 
-      
+      MeSHSimple %in% ALZ ~ "Alzheimers",
+
     # Risk factors
       MeSHSimple %in% WEIGHT ~ "Weight \n Related",
       MeSHSimple %in% WEIGHTLOSS ~ "Weight \n Loss",
@@ -57,7 +58,7 @@ meshClassified <- meshSimpleReduced %>%
     
       MeSHSimple %in% AA ~ "African \n Americans", 
       MeSHSimple %in% HISPANIC ~ "Hispanic \n Americans", 
-      MeSHSimple %in% AIAN ~ "American \n Natives", 
+      MeSHSimple %in% AIAN ~ "Native \n Americans", 
       MeSHSimple %in% ASIAN ~ "Asian \n Americans", 
       MeSHSimple %in% MINORITY ~ "Minority \n Population", 
     
@@ -102,6 +103,7 @@ meshClassified <- meshSimpleReduced %>%
     MeSHSimple %in% EBM ~ "EBM or \n Guidelines", 
     MeSHSimple %in% PROGRAMS ~ "Program \n Development", 
     MeSHSimple %in% QI ~ "Quality \n Improvement",
+    MeSHSimple %in% SDOH ~ "Social Determinants \n of Health",
     
     # Methods related
       MeSHSimple %in% RCT ~ "RCT", 
@@ -118,6 +120,7 @@ meshClassified <- meshSimpleReduced %>%
       MeSHSimple %in% CDC ~ "CDC", 
       MeSHSimple %in% CMS ~ "CMS", 
       MeSHSimple %in% WHO ~ "WHO", 
+      MeSHSimple %in% VA ~ "VA",
     
     
     TRUE ~ "zUnclassified")) %>%
@@ -131,3 +134,4 @@ meshClassified <- meshSimpleReduced %>%
 
 # get rid of all the mesh classifications
 gdata::keep(hsrRecent, meshCleaned, meshSimpleReduced, meshClassified, sure = TRUE)
+

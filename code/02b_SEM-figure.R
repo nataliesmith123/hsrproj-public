@@ -21,12 +21,14 @@ ggplot(data=SEMgraph, aes(x=SEMgraph$avgYearlyFunding, # avg funding on the x-ax
        
        title="Figure 1: Distribution of average yearly funding of included projects", 
        
-       subtitle="The majority of projects focused on on lower 'levels' of the social ecological model, and on average, those projects received more funding.",
+       subtitle="The majority of projects focused on on individual and interpersonal factors, and on average, those projects received more funding.",
        
-       caption="Notes: Projects were classified into levels of the social-ecological model by study team members. One researcher classified all 250 studies, two researchers each reviewed a random 
-       10%. The model was not applicable to 20/250 studies. Figure excludes studies with missing funding resources: 29 (indiv/inter), 15 (org/comm), and 5 (policy). If a study targeted more 
-       than one level, average funding is divided equally among levels. Median funding amounts: $298,941 (indiv/inter), $243,270 (org/comm), $257,178 (policy). Total n (included + excluded) 
-       do not add to 230 because studies could examine 1+ level of the social ecological model.") + 
+       caption="Notes: Numeric results should be interpreted with caution - 77% (192/250) projects were included. Figure excludes 58 projects where the social ecological model was not applicable (n=23) 
+       and/or funding information was not available (n=39; primarily Veteran's Administration projects). If a study targeted more than one level (e.g., a multilevel diabetes self management 
+       intervention), average yearly funding is divided equally among levels. Projects were classified into levels of the social-ecological model by study team members. One researcher classified 
+       all 250 studies, two researchers each reviewed a random 10%.
+       
+       Median funding amounts: $341,111 (indiv/inter), $284,134 (org/comm), $448,104 (policy).") + 
   
   # simple black and white theme
   theme_bw() + 
@@ -54,7 +56,7 @@ ggsave(filename = "output/Fig-1-SEM-funding.pdf", plot=last_plot(), device="pdf"
        units="in", width=11, height=8.5)
 
 ggsave(filename = "output/Fig-1-SEM-funding.png", plot=last_plot(), device="png", 
-       units="in", width=11, height=8.5)
+       units="in", width=11, height=8.5, dpi=500)
 
 
 

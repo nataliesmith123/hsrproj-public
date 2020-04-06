@@ -76,6 +76,29 @@ FUNDERS = function(INPUT_DS){
            DHHS==1 ~ "DHHS",
            NSF==1 ~ "NSF",
            TRUE ~ "OTHER"
+         ), 
+         
+         NIHspecific = case_when(
+           primaryFunder=="NIH" & map_int(map(funder, str_detect, pattern = "^NIMH$"), any) ~ "NIMH", 
+           primaryFunder=="NIH" & map_int(map(funder, str_detect, pattern = "^NIMHD$"), any) ~ "NIMHD", 
+           primaryFunder=="NIH" & map_int(map(funder, str_detect, pattern = "NHLBI"), any) ~ "NHLBI", 
+           primaryFunder=="NIH" & map_int(map(funder, str_detect, pattern = "NIDDK"), any) ~ "NIDDK", 
+           primaryFunder=="NIH" & map_int(map(funder, str_detect, pattern = "NIA"), any) ~ "NIA", 
+           primaryFunder=="NIH" & map_int(map(funder, str_detect, pattern = "NCI"), any) ~ "NCI", 
+           primaryFunder=="NIH" & map_int(map(funder, str_detect, pattern = "NINR"), any) ~ "NINR", 
+           primaryFunder=="NIH" & map_int(map(funder, str_detect, pattern = "NIEHS"), any) ~ "NIEHS", 
+           primaryFunder=="NIH" & map_int(map(funder, str_detect, pattern = "NEI"), any) ~ "NEI", 
+           primaryFunder=="NIH" & map_int(map(funder, str_detect, pattern = "NIDA"), any) ~ "NIDA", 
+           primaryFunder=="NIH" & map_int(map(funder, str_detect, pattern = "NICHD"), any) ~ "NICHD", 
+           primaryFunder=="NIH" & map_int(map(funder, str_detect, pattern = "NIDCR"), any) ~ "NIDCR", 
+           primaryFunder=="NIH" & map_int(map(funder, str_detect, pattern = "NLM"), any) ~ "NLM", 
+           primaryFunder=="NIH" & map_int(map(funder, str_detect, pattern = "NCATS"), any) ~ "NCATS", 
+           primaryFunder=="NIH" & map_int(map(funder, str_detect, pattern = "OD"), any) ~ "NIH-OD", 
+           primaryFunder=="NIH" & map_int(map(funder, str_detect, pattern = "NHGRI"), any) ~ "NHGRI", 
+           primaryFunder=="NIH" & map_int(map(funder, str_detect, pattern = "NCCIH"), any) ~ "NCCIH", 
+           primaryFunder=="NIH" & map_int(map(funder, str_detect, pattern = "NINDS"), any) ~ "NINDS", 
+           primaryFunder=="NIH" & map_int(map(funder, str_detect, pattern = "NCRR"), any) ~ "NCRR", 
+           TRUE ~ "NotSpecifiedNotNIH"
          )
          ) %>%
     select(-funder)

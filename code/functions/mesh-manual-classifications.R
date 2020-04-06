@@ -6,11 +6,13 @@
 RESPIRATORY <- c("Asthma", 
                  "Pulmonary Disease, Chronic Obstructive", 
                  "Respiration Disorders", 
-                 "Smoking")
+                 "Smoking", 
+                 "Pneumonia")
 
 KIDNEY <- c("Renal Insufficiency, Chronic", 
             "Glomerular Filtration Rate", 
-            "Kidney Failure, Chronic")
+            "Kidney Failure, Chronic", 
+            "Chronic Kidney Failure")
 
 
 
@@ -26,7 +28,9 @@ CARDIOV <- c("Myocardial Infarction",
              "Coronary Artery Disease", 
              "Coronary Disease", 
              "Stroke", 
-             "Cardiovascular Diseases")
+             "Cardiovascular Diseases", 
+             "Cardiology", 
+             "Ischemia")
 
 BP <- c("Blood Pressure", 
         "Hypertension")
@@ -54,6 +58,11 @@ HIV <- c("HIV Infections")
 SLEEP <- c("Sleep")
 OSTEO <- c("Osteoarthritis")
 
+ALZ <- c("Alzheimers Disease", 
+         "Alzheimer's Disease", 
+         "Cognitive Dysfunction", 
+         "Alzheimer Disease")
+
 
 # Risk Factors ------------------------------------------------------------
 
@@ -80,15 +89,15 @@ MENTALHEALTH <- c("Depression",
                   "Mental Disorders", 
                   "Mental Health Services", 
                   "Depressive Disorder, Major", 
-                  "Stress, Psychological")
+                  "Stress, Psychological", 
+                  "Antipsychotic Agents")
 
 
 
 
 # Populations -------------------------------------------------------------
 
-VETERANS <- c("Veterans", 
-              "United States Department of Veterans Affairs")
+VETERANS <- c("Veterans")
 
 FEMALE <- c("Female", "Mothers")
 
@@ -116,7 +125,8 @@ YOUNG <- c("Adolescent Medicine",
            "Adolescent", 
            "Young Adult", 
            "Child, Preschool", 
-           "Child")
+           "Child", 
+           "Pediatrics")
 
 
 MINORITY <- c("Vulnerable Populations", 
@@ -150,7 +160,8 @@ EBM <- c("Evidence-Based Medicine",
          "Guidelines as Topic")
 
 ACCESS <- c("Health Services Accessibility", 
-            "Access to Information")
+            "Access to Information", 
+            "Access to Health Care")
 
 QUALITY <- c("Quality of Life", 
              "Quality of Health Care",
@@ -168,7 +179,8 @@ PATIENT <- c("Patient-Centered Care",
              "Professional-Patient Relations",
              "Patient Satisfaction", 
              "Patient Preference",
-             "Patient Education as Topic")
+             "Patient Education as Topic", 
+             "Patient Navigation")
 
 CONTINUITY <- c("Continuity of Patient Care",
                 "Patient Care Team")
@@ -178,7 +190,8 @@ MEDADHERE <- c("Medication Adherence",
 
 DISPARITIES <- c("Healthcare Disparities", 
                  "Health Status Disparities", 
-                 "Health Equity")
+                 "Health Equity", 
+                 "Health Care Disparities")
 
 DECISION <- c("Decision Making", 
               "Decision Support Systems, Clinical", 
@@ -199,7 +212,9 @@ INSURANCE <- c("Insurance, Health",
                "Medicaid", 
                "Patient Protection and Affordable Care Act", 
                "Accountable Care Organizations", 
-               "Deductibles and Coinsurance")
+               "Deductibles and Coinsurance", 
+               "Health Insurance", 
+               "Affordable Care Act")
 
 EHR <- c("Electronic Health Records", 
          "Medical Records Systems, Computerized", 
@@ -219,6 +234,8 @@ OUTCOMES <- c("Outcome Assessment, Health Care",
 SES <- c("Poverty", 
          "Social Class", 
          "Unemployment")
+
+SDOH <- c("Social Determinants of Health")
 
 HOSPITALS <- c("Hospitalization", 
                "Emergency Service, Hospital", 
@@ -242,7 +259,8 @@ PRACTICIONERS <- c("Nurse Practitioners",
                    "Nurses", 
                    "Occupational Health Services", 
                    "Physician Assistants", 
-                   "Physicians")
+                   "Physicians", 
+                   "Pharmacy")
 
 
 PREGNANCY <- c("Postpartum Period", 
@@ -349,6 +367,8 @@ CMS <- c("Centers for Medicare and Medicaid Services, U.S.")
 CDC <- c("Centers for Disease Control and Prevention, U.S.")
 
 WHO <- c("World Health Organization")
+
+VA <- c("United States Department of Veterans Affairs")
 
 
 
