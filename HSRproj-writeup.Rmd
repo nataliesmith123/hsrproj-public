@@ -1,17 +1,8 @@
 ---
 title: "HSRproj writeup"
 author: "Natalie R Smith, Katherine EM Miller, Bryan S Blette, and Leah Frerichs"
-output:
-  word_document:
-    reference_docx: word-styles-reference-01.docx
-    toc: yes
-    toc_depth: '3'
-  html_document:
-    highlight: default
-    number_sections: no
-    theme: lumen
-    toc: yes
-    toc_depth: 3
+knit: (function(input_file, encoding) { out_dir <- 'docs'; rmarkdown::render(input_file,
+  encoding=encoding, output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
 ---
 
 
