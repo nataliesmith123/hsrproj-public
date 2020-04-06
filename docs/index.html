@@ -713,11 +713,7 @@ print(SEMmissing)</code></pre>
   
   # and FINALLY, add the data via a dotplot. I have adjusted the sizes and binwidth iteratively until I like the sizing in the exported graphs
   geom_dotplot(binwidth = 24000, dotsize=0.8) </code></pre>
-<pre class="r"><code># save as both vector and raster formats
-ggsave(filename = &quot;output/Fig-1-SEM-funding.pdf&quot;, plot=last_plot(), device=&quot;pdf&quot;, 
-       units=&quot;in&quot;, width=11, height=8.5)
-
-ggsave(filename = &quot;output/Fig-1-SEM-funding.png&quot;, plot=last_plot(), device=&quot;png&quot;, 
+<pre class="r"><code>ggsave(filename = &quot;output/Fig-1-SEM-funding.png&quot;, plot=last_plot(), device=&quot;png&quot;, 
        units=&quot;in&quot;, width=11, height=8.5, dpi=500)
 
 
