@@ -1,6 +1,6 @@
 ---
 title: "HSRproj writeup"
-author: "Natalie R Smith, Katherine E.M. Miller, Bryan S Blette, and Leah Frerichs"
+author: "Natalie R Smith, Katherine EM Miller, Bryan S Blette, and Leah Frerichs"
 output:
   word_document:
     reference_docx: word-styles-reference-01.docx
@@ -80,6 +80,9 @@ Subset to only research, and pull the 250 most recent research projects.
 Identifying the most common funders of diabetes research, within the 250 most recent projects. 
 ```{r}
 tableone::CreateCatTable(vars=c("primaryFunder"), data=hsrRecent)
+
+tableone::CreateCatTable(vars=c("NIHspecific"), data=hsrRecent)
+
 ```
 
 
@@ -125,9 +128,12 @@ Using classified concepts, create vertices and edges for MeSH concept network
 ```{r meshnetworkviz, fig.show='hide'}
 ```
 
-This is the final figure output from R, and community names are added in post-processing in Adobe Illustrator. This illustrator document is contained in the output folder. 
 ```{r}
-include_graphics("output/Fig-2-concept-network.png")
+include_graphics("output/Fig-2-5comms.png")
+```
+
+```{r}
+include_graphics("output/Fig-2-nuance.png")
 ```
 
 
