@@ -7,10 +7,12 @@
 
 SEMOrig <- read.csv("output/SEMforUPDATE900-classified.csv")
 # there are 323 records here, but only 250 should be included
-  table(SEMOrig$fromUpdate900)
+table(SEMOrig$fromUpdate900)
 # 227 should be included 
-  table(SEMOrig$fromUpdate900, SEMOrig$Not.Applicable, useNA = "always")
+table(SEMOrig$fromUpdate900, SEMOrig$Not.Applicable, useNA = "always")
 
+# 23 were not applicable
+nrow(SEMOrig %>% filter(fromUpdate900==1) %>% filter(!is.na(Not.Applicable)))
 
 SEM <- SEMOrig %>%
   
@@ -65,6 +67,10 @@ SEMlong <- SEM %>%
   # make the level variable name more informative
   rename(SEM = Level) 
 
+# correct number included, removing duplicate rows because of multilevel studies 
+length(unique(SEMlong$ProjectID))
+
+
 # identify how many of the 3 levels a project targeted
 # this will be used to split the funding up later, so that we are not double counting any dollars
 tmp <- SEMlong %>% 
@@ -83,10 +89,10 @@ SEMlong <- left_join(SEMlong, tmp, by="ProjectID")
 SEMlong <- left_join(SEMlong, 
                      hsrRecent %>% select(ProjectID, avgYearlyFunding), 
                      by="ProjectID")
-  
+
 # now create the final dataset for graphs
 SEMgraph <- SEMlong %>%
-
+  
   # this project is an very big outlier - the GRADE study
   # budget for 2012 is listed as 23,000,000 (23 million)
   filter(ProjectID != 20153570)  %>%
@@ -100,6 +106,8 @@ SEMgraph <- SEMlong %>%
   # individual/interpersonal aims (probably) require more funding that comm/org or policy
   mutate(avgYearlyFunding = avgYearlyFunding/num)
 
+# 192 are actually included in the graph
+length(unique(SEMgraph$ProjectID))
 
 
 SEMavgs = SEMgraph %>%
@@ -114,7 +122,7 @@ SEMavgs = SEMgraph %>%
 
 print(SEMavgs)
 
-# of studies where the SEM was applicable, these are missing funding information
+# of studies where the SEM was applicable (note this is n=227!!!!!!), these are missing funding information
 SEMmissing = SEMlong %>%
   
   # now, we just want to examine how many we are missing funding info for - for caption
@@ -128,6 +136,11 @@ SEMmissing = SEMlong %>%
 
 print(SEMmissing)
 
-nrow(distinct(SEMgraph, ProjectID))
+SEMmissingWHO <- SEMlong %>%
+  filter(avgYearlyFunding==-1 | is.na(avgYearlyFunding)) %>%
+  left_join((hsrRecent %>% select(ProjectID, primaryFunder)), by="ProjectID")
+
+table(SEMmissingWHO$primaryFunder, SEMmissingWHO$SEM)
+
 
 rm(SEMOrig, SEM, tmp, SEMlong, SEMavgs, SEMmissing)
